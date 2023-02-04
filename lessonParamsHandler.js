@@ -1,5 +1,4 @@
 function handleParams() {
-    console.log("handling the params");
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const conclusionType = urlParams.get('conclusionType');
