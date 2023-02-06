@@ -6,13 +6,11 @@ function handleParams() {
     
     console.log("conclusionType: " + conclusionType);
     console.log("showNavBar: " + showNavBar);
-    
-    var navBar = document.getElementById("navBar");
-    var practiceTimeDiv = document.getElementById("Practice-Time-Div");
+
+    var navBar = document.getElementById("Nav-Bar");
     var practiceTimeDiv = document.getElementById("Practice-Time-Div");
     var getTheAppDiv = document.getElementById("Get-The-App-Div");
-
-
+ 
     //  By default, the nav bar is shown and the get the app div is shown
     navBar.style.display = "block"
     getTheAppDiv.style.display = "block";
