@@ -13,16 +13,16 @@ function handleParams() {
     var getTheAppDiv = document.getElementById("Get-The-App-Div");
  
     //  By default, the nav bar is shown and the get the app div is shown
-    navBar.style.display = "block"
-    getTheAppDiv.style.display = "block";
+    navBar.style.display = "flex"
+    getTheAppDiv.style.display = "flex";
     practiceTimeDiv.style.display = "none";
 
     if (conclusionType === "practiceTime") {
-        practiceTimeDiv.style.display = "block";
+        practiceTimeDiv.style.display = "flex";
         getTheAppDiv.style.display = "none";
     } else if (conclusionType === "getTheApp") {
         practiceTimeDiv.style.display = "none";
-        getTheAppDiv.style.display = "block";
+        getTheAppDiv.style.display = "flex";
     } else if (conclusionType === "none") {
         practiceTimeDiv.style.display = "none";
         getTheAppDiv.style.display = "none";
@@ -31,6 +31,6 @@ function handleParams() {
     if (showNavBar === "false") {
         navBar.style.display = "none";
     } else if (showNavBar === "true") {
-        navBar.style.display = "block";
+        navBar.style.display = "flex";
     }
 }
