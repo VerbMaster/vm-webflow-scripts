@@ -4,12 +4,9 @@ function handleParams() {
     const conclusionType = urlParams.get('conclusionType');
     const showNavBar = urlParams.get('showNavBar');
  
-    var navBar = document.getElementById("Nav-Bar");
     var practiceTimeDiv = document.getElementById("Practice-Time-Div");
     var getTheAppDiv = document.getElementById("Get-The-App-Div");
  
-    //  By default, the nav bar is shown and the get the app div is shown
-    navBar.style.display = "flex"
     getTheAppDiv.style.display = "flex";
     practiceTimeDiv.style.display = "none";
 
@@ -24,9 +21,9 @@ function handleParams() {
         getTheAppDiv.style.display = "none";
     }
 
+    var navBar = document.getElementById("Nav-Bar");
+
     if (showNavBar === "false") {
         navBar.style.display = "none";
-    } else if (showNavBar === "true") {
-        navBar.style.display = "flex";
-    }
+    }  
 }
