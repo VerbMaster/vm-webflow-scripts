@@ -1,13 +1,9 @@
 function handleParams() {
-    console.log("handleParams called");
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const conclusionType = urlParams.get('conclusionType');
     const showNavBar = urlParams.get('showNavBar');
-    
-    console.log("conclusionType: " + conclusionType);
-    console.log("showNavBar: " + showNavBar);
-
+ 
     var navBar = document.getElementById("Nav-Bar");
     var practiceTimeDiv = document.getElementById("Practice-Time-Div");
     var getTheAppDiv = document.getElementById("Get-The-App-Div");
